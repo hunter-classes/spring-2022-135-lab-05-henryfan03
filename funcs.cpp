@@ -11,3 +11,12 @@ bool isDivisibleBy(int n, int d) {
     return false;
   }
 }
+
+bool isPrime(int n) {
+  if (n == 1 || n == 0) {
+    return true;
+  }
+  else {
+    
+  }
+}
