@@ -14,4 +14,4 @@ bool isTwinPrime(int n);
 
 int nextTwinPrime(int n);
 
-//int largestTwinPrime(int a, int b);
+int largestTwinPrime(int a, int b);
