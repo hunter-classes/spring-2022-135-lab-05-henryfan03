@@ -77,7 +77,7 @@ TEST_CASE("Next Twin Prime Larger Number Cases") {
 }
 
 TEST_CASE("Largest Twin Prime Base Cases") {
-  CHECK(largestTwinPrime(0, 5) == 5); 
+  CHECK(largestTwinPrime(0, 5) == 5);
   CHECK(largestTwinPrime(0, 1) == -1);
 }
 
@@ -85,7 +85,7 @@ TEST_CASE("Largest Twin Prime Failing Cases") {
   CHECK(largestTwinPrime(14, 16) == -1);
 }
 
-TEST_CASE("Largest Twin Prime Large Ragne") {
+TEST_CASE("Largest Twin Prime Large Range") {
   CHECK(largestTwinPrime(5, 18) == 17);
   CHECK(largestTwinPrime(1, 31) == 31);
 }
