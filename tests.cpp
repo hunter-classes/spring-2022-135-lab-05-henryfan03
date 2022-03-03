@@ -17,3 +17,20 @@ TEST_CASE("Divisibility by Zero Case") {
 TEST_CASE("Divisibility with large integers") {
   CHECK(isDivisibleBy(100000000,10000) == true)
 }
+
+TEST_CASE("Is Prime Base Cases") {
+  CHECK(isPrime(0) == false);
+  CHECK(isPrime(1) == true);
+  CHECK(isPrime(2) == true);
+}
+
+TEST_CASE("Is Prime Small Integer Cases") {
+  CHECK(isPrime(7) == true);
+  CHECK(isPrime(10) == false);
+  CHECK(isPrime(15) == false);
+}
+
+TEST_CASE("Is Prime Large Mersenne Prime Cases") {
+  CHECK(isPrime(8191) == true);
+  CHECK(isPrime(131071) == true);
+}
