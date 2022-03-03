@@ -4,6 +4,9 @@
 // add functions here
 
 bool isDivisibleBy(int n, int d) {
+  if (d == 0) {
+    return false;
+  }
   if (n % d == 0) {
     return true;
   }
@@ -25,6 +28,14 @@ bool isPrime(int n) {
         return false;
       }
     }
-    return true
+    return true;
   }
+}
+
+int nextPrime(int n) {
+  int target = n + 1;
+  while (isPrime(target) == false) {
+    target++;
+  }
+  return target;
 }
